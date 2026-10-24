@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & help (Discord)
+    url: https://discord.gg/GSaW4rr5NB
+    about: For questions, help with installing or just chatting, join the Discord.
+  - name: 🌍 Translations (Weblate)
+    url: https://translate.leonardkipar.dev/projects/fetzis-displays/
+    about: Wrong or missing translations are fixed directly on Weblate, no issue needed.

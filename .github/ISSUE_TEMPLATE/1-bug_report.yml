@@ -1,0 +1,80 @@
+name: 🐛 Bug report
+description: Something in the mod doesn't work the way it should.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in as much as you can, it makes fixing it a lot faster.
+        **Does the game crash?** Please use the 💥 Crash report form instead.
+  - type: dropdown
+    id: minecraft
+    attributes:
+      label: Minecraft version
+      options:
+        - "26.1.2"
+        - "1.21"
+        - "1.20.1"
+        - "Other (write it in the description)"
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Fabric
+        - NeoForge
+        - Forge
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Shown in the mod list or in the file name of the mod.
+      placeholder: "1.1.1"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug. Screenshots or videos help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Step by step, how can the bug be triggered?
+      placeholder: |
+        1. Place a ...
+        2. Right-click it with ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: input
+    id: log
+    attributes:
+      label: Log
+      description: Upload `logs/latest.log` to [mclo.gs](https://mclo.gs) and paste the link here.
+      placeholder: https://mclo.gs/...
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods or modpack
+      description: Which other mods are installed, or which modpack are you playing? Does the bug also happen with only this mod installed?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and this bug isn't reported yet.
+          required: true
+        - label: I'm using the latest version of the mod for my Minecraft version.

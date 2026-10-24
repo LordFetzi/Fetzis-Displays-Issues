@@ -1,0 +1,33 @@
+name: 💡 Suggestion
+description: An idea for new blocks, features or changes.
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Please check the existing issues first. If it's already suggested, leave a 👍 there instead.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should be added or changed? For example a new display block or a new way to show items.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it be useful?
+      description: What would you build with it, or what problem would it solve?
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Pictures, sketches or examples of how it could look are very welcome.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and this isn't suggested yet.
+          required: true
